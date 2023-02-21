@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color:#926239;
+  line-height:1.6;
+}
+
+h1{
+    font-size: 150px;
+    margin-bottom: 0;
+    font-family: 'Dancing Script', cursive;
+}
+.description{
+    width: 600px;
+}
+
+
+.beginning{
+    background-image:url(images/profile.jpg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
+
+  .boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+.box{
+    padding: 4rem 1rem;
+    background: var(--primary);
+    text-align: center;
+    padding: 10rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.main-na ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-na a{
+
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color:#926239;
+    text-transform: uppercase;
+    box-shadow: var(--sh);
+}
+
+.main-na a:hover{
+    background: rgb(223, 210, 210);
+    color: rgb(170, 160, 160);
+}
+
+@media (max-width: 500px){
+    .boxes {
+      grid-template-columns: 1fr;
+    }
+}
+
+.center{
+    margin: auto;
+    text-align: center;
+}
+
